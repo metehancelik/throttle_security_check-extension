@@ -17,9 +17,9 @@ class MakeResponse
     /**
      * Handle the command.
      *
-     * @param  SettingRepositoryInterface                 $settings
-     * @param  ResponseFactory                            $response
-     * @param  Factory                                    $view
+     * @param  SettingRepositoryInterface $settings
+     * @param  ResponseFactory $response
+     * @param  Factory $view
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function handle(SettingRepositoryInterface $settings, ResponseFactory $response, Factory $view)

@@ -31,7 +31,7 @@ class ThrottleSecurityCheckExtension extends SecurityCheckExtension
      */
     public function attempt()
     {
-        return $this->dispatch(new ThrottleLogin());
+        return dispatch_now(new ThrottleLogin());
     }
 
     /**
@@ -44,6 +44,4 @@ class ThrottleSecurityCheckExtension extends SecurityCheckExtension
     {
         return true;
     }
-
-
 }
